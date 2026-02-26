@@ -67,7 +67,11 @@ INSERT INTO orders VALUES (5002, 2, 102, '2026-02-02', 2);
 
 ALTER TABLE customers ADD COLUMN second_name VARCHAR(50);
 
-UPDATE customers SET second_name = 'McDonald' WHERE customer_id = 1;
+UPDATE customers
+SET
+    second_name = 'McDonald'
+WHERE
+    customer_id = 1;
 
 UPDATE customers SET second_name = 'Bond' WHERE customer_id = 2;
 
