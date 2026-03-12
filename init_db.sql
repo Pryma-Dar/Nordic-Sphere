@@ -117,3 +117,38 @@ INSERT INTO orders (customer_id, product_id, order_date, quantity) VALUES
 (4, 102, '2026-02-02', 2),
 (5, 102, '2026-02-07', 1),
 (1, 102, '2026-02-26', 1);
+
+INSERT INTO products (product_id, product_name, category, cost_price, sale_price, initial_stock) VALUES
+
+(104, 'Stockholm Chair', 'Furniture', 150.00, 320.00, 100),
+(105, 'Fjord Mirror', 'Decor', 40.00, 95.00, 80),
+(106, 'Danish Shelf', 'Furniture', 80.00, 180.00, 60),
+(107, 'Lumi Candle', 'Decor', 5.00, 15.00, 500),
+(108, 'Art Poster', 'Decor', 10.00, 35.00, 300);
+
+INSERT INTO returns (return_id, order_id, return_reason) VALUES
+(904, 5002, 'Defective'), 
+(905, 5006, 'Defective');
+
+INSERT INTO orders (customer_id, product_id, order_date, quantity) VALUES
+
+(1, 101, '2026-03-01', 3), 
+(2, 101, '2026-03-05', 2), 
+(3, 104, '2026-03-07', 5),
+(4, 101, '2026-03-10', 2), 
+(5, 104, '2026-03-12', 3), 
+(1, 101, '2026-03-15', 1),
+
+(2, 103, '2026-03-02', 10), 
+(3, 106, '2026-03-04', 4), 
+(4, 105, '2026-03-06', 6),
+(5, 103, '2026-03-08', 8), 
+(1, 106, '2026-03-11', 5), 
+(2, 105, '2026-03-14', 4),
+
+(3, 107, '2026-03-01', 50), 
+(4, 107, '2026-03-03', 30), 
+(5, 108, '2026-03-05', 15),
+(1, 107, '2026-03-07', 40), 
+(2, 108, '2026-03-09', 10), 
+(3, 102, '2026-03-12', 1);
